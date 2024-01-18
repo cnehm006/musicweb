@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+#song-info h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+#song-info p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Add more styles for Phase 2 here */
