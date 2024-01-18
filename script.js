@@ -1,7 +1,9 @@
-// You can add smooth animations using JavaScript. 
-// For instance, changing the text from "Coming Soon" to "Out Now" with a fade effect.
-
 document.addEventListener('DOMContentLoaded', function () {
+    const albumCover = document.getElementById('album-cover');
+    albumCover.addEventListener('click', function() {
+        window.location.href = 'https://distrokid.com/hyperfollow/ch4fic/murd5scene';
+    });
+
     // Example function to change song status
     function updateSongStatus() {
         const statusElement = document.getElementById('song-status');
