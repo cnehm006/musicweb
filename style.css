@@ -4,6 +4,7 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -12,22 +13,23 @@ body, html {
 #main-container {
     width: 80%;
     max-width: 600px;
+    position: relative; /* Context for absolute positioning */
 }
 
 #album-cover-container {
     text-align: center;
     margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease;
 }
 
 #album-cover {
-    width: 100%; /* Adjust based on your preference */
-    max-width: 300px; /* Set a maximum size */
-    cursor: pointer; /* Change cursor to indicate it's clickable */
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
 }
 
 #album-cover-container:hover {
-    transform: scale(1.05); /* Slightly enlarge the album cover on hover */
+    transform: scale(1.05);
 }
 
 #song-info h1 {
@@ -41,4 +43,28 @@ body, html {
     margin-top: 10px;
 }
 
-/* Add more styles for Phase 2 here */
+#overlay-container {
+    position: absolute; /* Overlay the main content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#invisibleButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+    background: red;
+    pointer-events: auto;
+}
+
+#invisibleButton:focus {
+    outline: none;
+}

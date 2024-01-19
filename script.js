@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'https://distrokid.com/hyperfollow/ch4fic/murd5scene';
     });
 
+    // Invisible button interaction
+    const invisibleButton = document.getElementById('invisibleButton');
+    invisibleButton.addEventListener('click', function() {
+        alert('Mira al amira, the miracle of my admiration <3');
+    });
+
     // Example function to change song status
     function updateSongStatus() {
         const statusElement = document.getElementById('song-status');
@@ -11,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             statusElement.textContent = 'Out Now on All Platforms';
             statusElement.style.opacity = 1;
-        }, 500); // Adjust timing as needed
+        }, 500);
     }
 
-    // Call this function when your song is released
+    // Uncomment the following line when your song is released
     // updateSongStatus();
 });
