@@ -68,3 +68,23 @@ body, html {
 #invisibleButton:focus {
     outline: none;
 }
+
+#platform-links {
+    margin-top: 20px;
+}
+
+#platform-links a {
+    display: inline-block;
+    background-color: #1DB954; /* Spotify's brand color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+#platform-links a:hover {
+    background-color: #1ED760; /* Slightly lighter green on hover */
+}
